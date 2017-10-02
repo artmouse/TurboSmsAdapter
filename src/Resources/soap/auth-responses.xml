@@ -1,0 +1,4 @@
+<messages>
+    <message key="success">Вы успешно авторизировались</message>
+    <message key="fail">Неверный логин или пароль</message>
+</messages>

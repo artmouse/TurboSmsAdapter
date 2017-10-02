@@ -1,0 +1,11 @@
+<messages>
+    <message key="signature_not_allowed">Данная подпись запрещена администратором</message>
+    <message key="signature_invalid"><![CDATA[
+        Подпись отправителя может содержать только буквы латинского алфавита, цифры, пробел, а также знаки: ._-&
+    ]]></message>
+    <message key="missing_required_parameters">Не достаточно параметров для выполнения функции</message>
+    <message key="fail">Не удалось сохранить данные сообщения, свяжитесь с администрацией</message>
+    <message key="success">Сообщения успешно отправлены</message>
+
+    <message key="invalid_phone" regexp="true">/^Не удалось распознать номер получателя.+/</message>
+</messages>
