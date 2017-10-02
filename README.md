@@ -1,6 +1,11 @@
 Turbo SMS
 =========
 
+[![Build Status](https://travis-ci.org/Sms-Gate/TurboSmsAdapter.svg?branch=master)](https://travis-ci.org/Sms-Gate/TurboSmsAdapter)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/e90a0cd4-e731-4f9c-97ab-89556d68d569/mini.png)](https://insight.sensiolabs.com/projects/e90a0cd4-e731-4f9c-97ab-89556d68d569)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Sms-Gate/TurboSmsAdapter/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Sms-Gate/TurboSmsAdapter/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/Sms-Gate/TurboSmsAdapter/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/Sms-Gate/TurboSmsAdapter/?branch=master)
+
 Implement Turbo SMS adapter for sending SMS to users.
 
 Implemented protocols:
@@ -20,7 +25,7 @@ Add TurboSms package in your composer.json:
 ````json
 {
     "require": {
-        "sms-gate/turbo-sms": "~1.0"
+        "sms-gate/turbo-sms-adapter": "~1.0"
     }
 }
 ````
@@ -28,7 +33,7 @@ Add TurboSms package in your composer.json:
 Now tell composer to download the library by running the command:
 
 ```bash
-$ php composer.phar update sms-gate/turbo-sms
+$ php composer.phar update sms-gate/turbo-sms-adapter
 ```
 
 Usage
