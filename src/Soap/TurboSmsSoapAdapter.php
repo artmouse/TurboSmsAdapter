@@ -22,6 +22,8 @@ use SmsGate\Adapter\TurboSms\Soap\Authenticator\TurboSmsSoapAuthenticatorInterfa
 use SmsGate\Adapter\TurboSms\Soap\ResponseParser\ResponseParserInterface;
 use SmsGate\Error;
 use SmsGate\ErrorReasons;
+use SmsGate\Exception\InvalidSenderNameException;
+use SmsGate\Exception\SenderNameNotAllowedException;
 use SmsGate\Exception\SendSmsException;
 use SmsGate\Message;
 use SmsGate\Phone;
@@ -147,12 +149,12 @@ class TurboSmsSoapAdapter implements AdapterInterface
             $key = $this->responseParser->parse($resultMessages);
 
             if ($key === 'signature_not_allowed') {
-                throw new SignatureNotAllowedException(sprintf(
+                throw new SenderNameNotAllowedException(sprintf(
                     'The signature (sender) "%s" not allowed.',
                     $message->getSender()
                 ));
             } elseif ($key === 'signature_invalid') {
-                throw new SignatureInvalidException(sprintf(
+                throw new InvalidSenderNameException(sprintf(
                     'Invalid signature (sender): %s',
                     $message->getSender()
                 ));

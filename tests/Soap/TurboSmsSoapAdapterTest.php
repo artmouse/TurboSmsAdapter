@@ -130,7 +130,7 @@ class TurboSmsSoapAdapterTest extends TestCase
     /**
      * @test
      *
-     * @expectedException \SmsGate\Adapter\TurboSms\Exception\SignatureNotAllowedException
+     * @expectedException \SmsGate\Exception\SenderNameNotAllowedException
      * @expectedExceptionMessage The signature (sender) "TurboSMS" not allowed.
      */
     public function shouldFailSendSmsIfSignatureNotAllowed(): void
@@ -160,7 +160,7 @@ class TurboSmsSoapAdapterTest extends TestCase
     /**
      * @test
      *
-     * @expectedException \SmsGate\Adapter\TurboSms\Exception\SignatureInvalidException
+     * @expectedException \SmsGate\Exception\InvalidSenderNameException
      * @expectedExceptionMessage Invalid signature (sender): TurboSMS
      */
     public function shouldFailSendSmsIfSignatureIsInvalid(): void
