@@ -1,5 +1,5 @@
 {
-    "name": "sms-gate/turbo-sms",
+    "name": "sms-gate/turbo-sms-adapter",
     "description": "The library implement TurboSMS adapter.",
     "keywords": [ "sms", "gate", "sms gate", "turbosms", "turbo sms"],
     "type": "library",
