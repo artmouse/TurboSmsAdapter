@@ -134,7 +134,7 @@ class TurboSmsSoapAdapter implements AdapterInterface
      * Process the response from TurboSMS
      *
      * @param Message      $message
-     * @param array        $recipients
+     * @param Phone[]      $recipients
      * @param string|array $resultMessages
      *
      * @return ResultCollection
